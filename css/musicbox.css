@@ -1,0 +1,181 @@
+@media (min-width:960px){
+    .music{
+        opacity:.6;
+        position:fixed;
+        right:0;
+        bottom:20px;
+        width:23%;
+        
+        max-width:270px;
+        background-color:#333; 
+        z-index:20;       
+    }
+    .music .side{
+        position:relative;
+        float:left;
+        left:4px;
+        top:4px;
+        height:56px;
+        width:20%;
+        background-size:100%;
+        -webkit-transition:all .3s ease;
+        transition:all .3s ease;
+        -moz-transition:all .3s ease;
+        -o-transition:all .3s ease;
+        -ms-transition:all .3s ease;
+    }
+    .side1{
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index: 30;
+    }
+    /* .music .side .picture{
+        position:relative;
+        float:left;
+        width:100%;
+        height:100%;
+    } */
+    .side1 i{
+        font-size: 50px;
+        text-align:center;
+       
+    }
+    .side1 i:hover{
+
+        cursor:pointer;
+    }
+    .side2{
+        position:absolute;
+        width:100%;
+        height:100%;
+        z-index: 25;
+    }
+    .side2 .picture{
+        width:100%;
+        height:100%;
+    }
+    .music .control{
+        position:relative;
+        float:left;
+        left:4px;
+        top:4px;
+        height:56px;
+        width:80%;
+        background-size:100%;
+        -webkit-transition:all .3s ease;
+        transition:all .3s ease;
+        -moz-transition:all .3s ease;
+        -o-transition:all .3s ease;
+        -ms-transition:all .3s ease;
+    }
+    /*.music .buttons {
+        height:25%;
+        width:96%;
+        margin-left:2%;
+        margin-top: 2%;
+    }*/
+    .music .control i{
+        font-size :15px;
+        margin-left: 50px;
+        position: relative;
+        top:60%;
+    }
+    .music .control i:hover{
+        cursor:pointer;
+    }
+    .music .control .progress {
+        position:absolute;
+        bottom:45%;
+        width:100%;
+        height:20%;
+        /* background:#ccc; */
+    }
+    .music .control .progress .musictime {
+        position:absolute;
+        right:0;
+        color: #fff;
+        height:20px;
+        line-height:20px;   /*为了让时间垂直居中*/
+        text-align: right;  /*文字右对齐*/
+        padding-right: 10px;
+        z-index: 25;
+    }
+    .music .control .progress .musicbar {
+        position:absolute;
+        height:50%;
+        background: #eee;
+        width:0%; 
+        opacity: 0.6;
+        z-index: 30;
+    }
+    .music .screen{
+        display:inline-block;
+        position:absolute;
+        float:left;
+        right:0;
+        top:4px;
+        height:56px;
+        width:80%;
+    }
+    .music .screen .slice{
+        display:inline-block;
+        position:absolute;
+        left:45%;
+        float:left;
+        height:56px;
+        width:10%;
+        text-align: center;
+        color: #eee;
+        font-family: Serif;
+        font-size: 14px;
+    }
+    .music .screen .title{
+        display:inline-block;
+        position:absolute;
+        left:0;
+        float:left;
+        height:56px;
+        width:45%;
+        text-align: center;
+        color: #eee;
+        font-family: Serif;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+     .music .screen .artist{
+        display:inline-block;
+        position:absolute;
+        right:0;
+        float:left;
+        height:56px;
+        width:45%;
+        text-align: center;
+        color: #eee;
+        font-family: Serif;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+@media (max-width:960px){
+    .music{
+        opacity:1;
+        position:relative;
+        /*top:20%;*/
+        padding:5px 10%;
+        width:80%;
+        height:20%;
+        background-color:#333;
+        /*position:fixed;
+        right:0;
+        bottom:20px;
+        width:23%;
+        height:10%;
+        max-width:270px;
+        background-color:#333;*/
+        }
+}

@@ -19,8 +19,8 @@
 	<meta name="author" content="Young,星之内海" data-react-helmet="true">
 	<!--<link rel="shortcut icon" type="image/png" href="http://src.dtysky.moe/blog-site/image/logo.png">-->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
-	<link rel="stylesheet" type="text/css" href="css/musicbox.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="css/musicbox.css"/> -->
 	<!--[if lt IE 10]><style>.duration-main {
     -ms-transition: none;
     transition: none;
@@ -28,7 +28,12 @@
 	<script async="" src="https://www.google-analytics.com/analytics.js">
 		<!--谷歌用户统计-->
 	</script>
-	<script src="js/id3-minimized.js" type="text/javascript"></script>
+	<!-- <script src="js/id3-minimized.js" type="text/javascript"></script> -->
+	<!-- require APlayer -->
+	<link rel="stylesheet" href="css/APlayer.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+	<!-- require MetingJS -->
+	<script src="js/Meting.js"></script>	
 	<meta name="theme-color" content="#509080" data-react-helmet="true">
 </head>
 
@@ -90,13 +95,16 @@
 				<a href="/authors">Authors</a>
 			</nav>
 		</header>	
-		
+		<div id="musicplayer">  
+			<meting-js  server="netease"	type="playlist"	id="4883223734" ></meting-js>
+		</div>  
 		<aside id="right">
 			<div class="image" style="background-image: url(&quot;img/かいどう.jpg&quot;); z-index: 6; opacity: 0;"></div>
 			<div class="image" style="background-image: url(&quot;img/なつ.jpg&quot;); z-index: 5; opacity: 1;"> <!--  &quot是转义字符，表示""--></div>
+			
 		</aside>
 		
-		<!--音乐播放器-->
+		<!-- 音乐播放器
 		<div id='music' class='music'>
 			<div class='side' >
 				<div class='side1'>
@@ -105,27 +113,27 @@
 				</div>
 				<div class='side2'>
 					<img class='picture' id='picture'  src=''/> 
-					<!-- <div class='picture' id='picture'></div> -->
+					<div class='picture' id='picture'></div>
 				</div>
 			</div>
 			
 			<div class="control" style="z-index:23;">
 				<div class='progress'>
-                	<div class='musictime' style="font-size:50%"></div>
-                	<div class='musicbar'></div>
-           		 </div>
+		                	<div class='musictime' style="font-size:50%"></div>
+		                	<div class='musicbar'></div>
+		           		 </div>
 				<i id='prev' class="iconfont icon-ziyuanldpi"></i>
-	        	<i id='next' class="iconfont icon-ziyuanldpi1"></i>
+			        	<i id='next' class="iconfont icon-ziyuanldpi1"></i>
 				
 			</div>
 			<div  class='screen'>
-
+		
 				<span id="title" class="title"></span>
 				<span id="slice" class="slice"></span>
 				<span id="artist" class="artist"></span>
 			</div>
-		</div>
-
+		</div> -->
+		
 		<div id="main">
 			<div class="left"></div>
 			<div class="middle">
@@ -201,7 +209,9 @@
 					
 				</main>
 			</div>
-			<div class="right"></div>
+			<div class="right">
+				
+			</div>
 
 		</div>
 		
@@ -233,7 +243,7 @@
 		<a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">下载视频</a>
       	<a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
     </div>
-<script type="text/javascript" src="js/musicbox.js"></script>
+<!-- <script type="text/javascript" src="js/musicbox.js"></script> -->
 
 </body>
 <!--<script type="text/javascript" src="js/utils.js"></script>-->

@@ -35,7 +35,7 @@
     <!-- require MetingJS -->
     <script src="https://XSummerY.github.io/js/Meting.js"></script>
     <script src="https://XSummerY.github.io/js/highlight.pack.js"></script>     
-    <link rel="stylesheet" type="text/css" href="https://XSummerY.github.io/css/dark.css"/>   
+    <link rel="stylesheet" type="text/css" href="https://XSummerY.github.io/css/an-old-hope.css"/>   
     <meta name="theme-color" content="#509080" data-react-helmet="true">
 </head>
 
@@ -98,7 +98,7 @@
             </nav>
         </header>   
         <div id="musicplayer">  
-            <meting-js  server="netease"    type="playlist" id="4883223734" ></meting-js>
+            <meting-js  server="netease"    type="playlist" id="4884870656" ></meting-js>
         </div>  
         <aside id="right">
             <div class="image" style="background-image: url(&quot;https://XSummerY.github.io/img/かいどう.jpg&quot;); z-index: 6; opacity: 0;"></div>
@@ -198,7 +198,7 @@
                                 <hr class="hr1"/>
                                 
                                 <p>
-                                    进行到这个阶段，你已经在本地拥有了一个简单的个人博客，大概是下面的样子：<br/>
+                                    进行到这个阶段，你已经在本地拥有了一个简单的个人博客，大概是下面的样子：<br/><br/>
                                     <img src="img_skill1/article_skill1_3.png"/>
                                 </p>
                                 <br/>
@@ -206,16 +206,16 @@
                                     这时你可以通过git将本地的文件推送到github仓库中，进行网站的部署。<br/><br/>
                                     3.1&nbsp;安装配置git<br/><br/>
                                     在git官网下载git客户端：<a href="https://git-scm.com/download/win" target="_blank">https://git-scm.com/download/win</a> <br/><br/>
-                                    安装完成后打开git bash，这是一个类似Linux的终端。<br/><img src="img_skill1/article_skill1_4.png"/><br/><br/>
+                                    安装完成后打开git bash，这是一个类似Linux的终端。<br/><img src="img_skill1/article_skill1_4.png"style="width:60%;"/><br/><br/>
                                     执行下面的命令生成SSH访问私钥以及公钥。<br/>
                                     <pre><code>ssh-keygen -t rsa -C "username@email.com"</code></pre><br/>
                                     "username@email.com"为用户的邮箱。<br/>输入命令后会询问用户要存放密钥的地址和密码，直接回车默认即可。<br/>
-                                    <img src = "img_skill1/article_skill1_5.png"/><br/>
-                                    <br/>在刚才提示的存放位置找到SSH密钥文件：<br/><br/><img src="img_skill1/article_skill1_6.png"/><br/><br/>
+                                    <img src = "img_skill1/article_skill1_5.png" style="width:70%;"/><br/>
+                                    <br/>在刚才提示的存放位置找到SSH密钥文件：<br/><br/><img src="img_skill1/article_skill1_6.png"style="width:40%;"/><br/><br/>
                                     回到github，在右上角的菜单中找到Settings：<br/><br/>
-                                    <img src="img_skill1/article_skill1_7.png"/><br/><br/>进入SSH&nbsp;and&nbsp;GPG&nbsp;keys项目：<br/><br/><img src="img_skill1/article_skill1_8.png" style="width:800px;height:270px;"/><br/><br/>
+                                    <img src="img_skill1/article_skill1_7.png"style="width:40%;"/><br/><br/>进入SSH&nbsp;and&nbsp;GPG&nbsp;keys项目：<br/><br/><img src="img_skill1/article_skill1_8.png" style="width:70%;"/><br/><br/>
                                     选择New&nbsp;SSH&nbsp;key将id_rsa.pub中的字段复制进去以新建一个密钥。<br/><br/>在git&nbsp;中输入命令：<br/><br/><pre><code>ssh -T git@github.com</code></pre><br/>
-                                    <br/>显示如下时说明设置成功：<br/><br/><img src="img_skill1/article_skill1_9.png"/><br/><br/>完成了这一步，我们就可以开始上传本地文件了。<br/>打开存放静态网页的文件夹，右键打开git&nbsp;bash:<br/><br/><img src="img_skill1/article_skill1_10.png" style="width:150px;"/><br/><br/>输入下列命令：<br/><br/><pre><code>git init //初始化git
+                                    <br/>显示如下时说明设置成功：<br/><br/><img src="img_skill1/article_skill1_9.png"style="width:70%;"/><br/><br/>完成了这一步，我们就可以开始上传本地文件了。<br/>打开存放静态网页的文件夹，右键打开git&nbsp;bash:<br/><br/><img src="img_skill1/article_skill1_10.png" style="width:40%;"/><br/><br/>输入下列命令：<br/><br/><pre><code>git init //初始化git
 git config --global user.name "your name"
 git config --global user.email @email.com" //设置用户信息
 git remote add origin git@github.com:yourName/yourRepo.git 

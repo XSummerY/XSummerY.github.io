@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--定义浏览器渲染方式的语句，具体后面研究-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"><!--针对移动端的缩放-->
+    <!--<meta property="fs:webmaster" content="fB13uuNNHbmPPXxy">--><!--这个找不到是什么-->
+    <meta name="google-site-verification" content="">
+    <!--谷歌网站认证代码-->
+    <meta name="baidu-site-verification" content="">
+    <!--百度网站认证代码-->
+    <meta name="msvalidate.01" content="">
+    <!--必应认证-->
+    <title>Young no Summer</title>
+    <meta name="keywords" content="Young,博客,blog,技术,文化, " data-react-helmet="true">
+    <!--data-react-helmet="true"这一句还不明白-->
+    <meta name="description" content="我还想不到要写什么呢￢_￢如果想出来了再补上(·ω<)" data-react-helmet="true">
+    <meta name="author" content="Young,星之内海" data-react-helmet="true">
+    <!--<link rel="shortcut icon" type="image/png" href="http://src.dtysky.moe/blog-site/image/logo.png">-->
+    <link rel="stylesheet" href="https://XSummerY.github.io/css/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="css/musicbox.css"/> -->
+    <!--[if lt IE 10]><style>.duration-main {
+    -ms-transition: none;
+    transition: none;
+}</style><![endif]-->
+    <script async="" src="https://www.google-analytics.com/analytics.js">
+        <!--谷歌用户统计-->
+    </script>
+    <!-- <script src="js/id3-minimized.js" type="text/javascript"></script> -->
+    <!-- require APlayer -->
+    <link rel="stylesheet" href="https://XSummerY.github.io/css/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <!-- require MetingJS -->
+    <script src="https://XSummerY.github.io/js/Meting.js"></script>    
+    <meta name="theme-color" content="#509080" data-react-helmet="true">
+</head>
+
+
+
+<body data-gr-c-s-loaded="true">
+    <div id="container">
+        <div data-reactroot id="container-content">
+        <!-- react-empty: 2 -->
+        <div id="menu" class="duration-main" style="background-color: rgb(200, 255, 200);">
+            <a class="name" href="/article/Create-MyResume">YoungShar</a>
+                <address class="icons">
+                    <a href="https://github.com/XSummerY" class="icon-font icon github" target="_blank"></a>
+                    <!--<a href="" class="icon-font icon linkedin" target="_blank">
+                        
+                    </a>-->
+
+                    <!--<a href="" class="icon-font icon playstation" target="_blank">
+                        
+                    </a>-->
+                </address>
+                <div class="hr1"></div>
+                <nav>
+                    <div>
+                        <a class="home" href="/">Home</a>
+                    </div>
+                    <nav class="tag-ath">
+                        <a class="tags" href="/tags">Tags</a>
+                        <a class="authors" href="/authors">Authors</a>
+                    </nav>
+                </nav>
+                <div class="hr2"></div>
+                <p class="links-p">Links</p>
+                <address class="links">
+                    <a class="proj" href="/article/Create-MyWorld">Projects</a>
+                    <a class="friend">Friends</a>
+                </address>
+                <div class="hr3"></div>
+                <!--<p class="end">这是一个孤独行者的轨迹。</p>-->
+            <div id="menu-links" class="duration-main" style="top: -400px; background-color: rgb(80, 144, 128);">
+                <address>
+                    <li>
+                        <a target="_blank" href="http://lm7.xxxxxxxx.jp">Lm7</a>
+                    </li>
+                </address>
+            </div>
+        </div>
+        
+        <header id="menu-phone-header" class="duration-main" style="background-color: rgb(200, 255, 200);">
+            <address class="top">
+                <a href="/feeds/all" class="icon-font icon rss" target="_blank"></a><a href="https://github.com/XSummerY" class="icon-font icon github" target="_blank"></a><a class="icon-font icon resume" href="/article/Create-MyResume"></a><a href="" class="icon-font icon linkedin" target="_blank"></a><a href="" class="icon-font icon playstation" target="_blank"></a><!--不能存在空格，不然会显示在页面上-->
+            </address>
+
+            <div class="hr"></div>
+
+            <nav class="bottom"><!--如果文档中有“前后”按钮，则应该把它放到 <nav> 元素中。-->
+                <a href="/tags">Tags</a>
+                <a href="/">Home</a>
+                <a href="/authors">Authors</a>
+            </nav>
+        </header>   
+        <div id="musicplayer">  
+            <meting-js  server="netease"    type="playlist" id="4883223734" ></meting-js>
+        </div>  
+        <aside id="right">
+            <div class="image" style="background-image: url(&quot;https://XSummerY.github.io/img/かいどう.jpg&quot;); z-index: 6; opacity: 0;"></div>
+            <div class="image" style="background-image: url(&quot;https://XSummerY.github.io/img/なつ.jpg&quot;); z-index: 5; opacity: 1;"> <!--  &quot是转义字符，表示""--></div>
+            
+        </aside>
+        
+
+        
+        <div id="main">
+            <div class="left"></div>
+            <div class="middle">
+                <div class="top"></div>
+                <div id="nav-bar">
+                    <nav class="list">
+                        <li class="create"><a href="/category/Create"><span>Create</span></a></li><li class="skill"><a href="/category/Skill"><span>Skill</span></a></li><li class="art"><a href="/category/Art"><span>Art</span></a></li><li class="life"><a href="/category/Life"><span>Life</span></a></li><!--nav-bar的样式表使用了display:inline-block，注意使用这个属性的元素之间有空格时会体现在布局上-->
+                    </nav>
+
+                    <div class="bar-container"><!--该功能的实现需要脚本？-->
+                        <span class="bar" style="width: 52px; background-color: rgba(0, 0, 0, 0); transform: translateX(489px);"></span>
+                    </div>
+                </div>
+                <main id="content">
+                    <div id="content-list">
+                        <summary class="index-preview">
+                            <hr class="hr-home duration-main" style="background-color:  rgb(200, 255, 200);">
+                            
+                        </summary>
+                        <section>
+                             <a rel="bookmark" title="文章标题" href="https://XSummerY.github.io/article/skill1">
+                                <h2 class="duration-main">使用github page搭建个人博客</h2>
+                            </a>
+                            <header>
+                                <div class="top">
+                                    <p class="tag-sp authors">
+                                        <span class="duration-main" style="background: rgb(80, 144, 128);">author</span>
+                                        <a class="duration-main" href="/author/YoungShar">YoungShar</a>
+                                    </p>
+                                    <p class="tag-sp category">
+                                        <span class="duration-main" style="background: rgb(80, 144, 128);">tag</span>
+                                        <a class="duration-main" href="/category/Skill">Skill</a>
+                                    </p>
+                                    <p class="tag-sp time">
+                                        <span class="duration-main" style="background: rgb(80, 144, 128);">时间</span>
+                                    <a class="duration-main">1970.01.01</a>
+                                    </p>
+                                </div>
+                                <div class="tag-sp tags">
+                                    <span class="duration-main" style="background: rgb(80, 144, 128);">路标</span>
+                                    <p>
+                                        <a class="duration-main" href="/tag">..</a>
+                                    </p>
+                                    <!-- <p>
+                                        <a class="duration-main" href="/tag/比较">比较</a>
+                                    </p> -->
+                                    <!-- <p>
+                                        <a class="duration-main" href="/tag/少女H">少女H</a>
+                                    </p> -->
+                                </div>
+                            </header>
+                            <summary>
+                                <p id="test" style="text-align: center;">这篇文章简单介绍了如何使用git&nbsp;page服务搭建个人博客。</p>
+                            </summary>
+                            <footer>
+                                <div class="hr duration-main" style="background: rgb(80, 144, 128);"></div>
+                            </footer>
+                        </section>
+                        </ul>
+            
+                        <ul id="pagination">
+                            <p class="page prev disabled duration-main" style="color: rgb(80, 144, 128);">«</p>
+                            <p class="page normal current duration-main" style="background: rgb(80, 144, 128);">0</p>
+                            <a class="page normal active duration-main" href="/archives/1" style="color: rgb(80, 144, 128);">1</a>
+                            <a class="page normal active duration-main" href="/archives/2" style="color: rgb(80, 144, 128);">2</a>
+                            <a class="page normal active duration-main" href="/archives/3" style="color: rgb(80, 144, 128);">3</a>
+                            <a class="page normal active duration-main" href="/archives/4" style="color: rgb(80, 144, 128);">4</a>
+                            <a class="page next active duration-main" href="/archives/1" style="color: rgb(80, 144, 128);">»</a>
+                        </ul>
+                    </div>
+                    
+                </main>
+            </div>
+            <div class="right">
+                
+            </div>
+
+        </div>
+        
+
+        <footer id="menu-phone-footer" class="duration-main" style="background-color: rgb(200, 255, 200);">
+            <p class="links-p">Links</p>
+            <address class="links">
+                <!--<a target="_blank" href="http://lm7.xxxxxxxx.jp">Lm7</a>-->
+            </address>
+            <div class="hr"></div>
+            <p class="end">てへぺろ</p>
+        </footer>
+
+        <!--<div id="return-top">
+            <a class="icon-font"></a>
+        </div>-->
+
+
+
+        </div>
+    </div>
+    
+
+
+    <!--<script type="text/javascript" src="main.bundle.js"></script>-->
+
+    <div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;"> 
+        <div class="xl-chrome-ext-bar__logo"></div>
+        <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">下载视频</a>
+        <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div>
+<!-- <script type="text/javascript" src="js/musicbox.js"></script> -->
+
+</body>
+<!--<script type="text/javascript" src="js/utils.js"></script>-->
+
+</html>
